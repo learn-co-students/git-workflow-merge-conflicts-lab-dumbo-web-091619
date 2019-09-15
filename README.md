@@ -118,9 +118,6 @@ page with just a placeholder avatar. Marty and Doc should not be there.
 
 You're going to add both the doc-brown branch and the marty-mcfly branch to the master branch using merge. Merge the `doc-brown` branch first by running `git merge doc-brown -m "merge doc brown"` in the terminal.
 
-Here, we're saying: "Integrate the differences between `master` and `doc-brown`
-_back_ into `master`."
-
 When you merge `doc-brown` into your `master` branch, your terminal should print
 a readout that looks something like this:
 
@@ -185,32 +182,6 @@ __This is what `index.html` should look like with the merge conflict:__
 Open up the `index.html` file. Scroll down to around line 114 and 137. You
 should see something that looks like this:
 
-```html
-<<<<<<< HEAD
-  <!-- Begin Profile -->
-  <li class="home-blog-post">
-    <div class="blog-thumb">
-      <img width="304" height="304" class="prof-image" src="img/students/doc_brown_index_profile.jpg" class="attachment-blog-thumb wp-post-image" alt="doc brown">
-    </div>
-
-   <div class="blog-title">
-      <div class="big-comment">
-        <h3>Doc Brown</h3>
-      </div>
-      <p class="home-blog-post-meta">"Great Scott!"</p>
-    </div>
-    <div class="clear"></div>
-
-    <div class="excerpt">
-      <p>Doctor Emmett Lathrop "Doc" Brown was the inventor of the DeLorean time machine. Doc's role models were scientists, as evidenced by the names of his dogs and the portraits of Isaac Newton and Albert Einstein found inside his laboratory.</p>
-    </div>
-    <div class="clear"></div>
-  </li>
-  <!-- End Profile -->
-=======
->>>>>>> marty-mcfly
-... (MORE CODE) ...
-```
 
 #### Identify the Commits to Merge
 
