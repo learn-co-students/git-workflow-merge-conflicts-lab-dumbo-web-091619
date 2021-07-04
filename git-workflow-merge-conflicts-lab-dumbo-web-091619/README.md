@@ -5,17 +5,6 @@
 - Demonstrate steps for merge conflict resolution
 - Execute resolving a merge conflict
 
-## Important Update
-
-In order to complete this lab, please be sure to clone it from the following source:
-
-https://github.com/learn-co-curriculum/git-workflow-merge-conflicts-lab
-
-This is required because our teaching system works to make sure we don't deploy
-"broken git repositories" to our learners. But we're trying to teach you to work with...
-broken git repositories 😂. Cloning from the URL above, into a new directory is the
-best way to complete this lab.
-
 ## Introduction
 
 We've discussed how merge conflicts happen and how we can solve them. Let's work
@@ -127,17 +116,12 @@ page with just a placeholder avatar. Marty and Doc should not be there.
 
 ### Step 3: Merge!
 
-<<<<<<< HEAD
-HEAD
 You're going to add both the `doc-brown` branch and the `marty-mcfly` branch to
 the master branch using `git merge`. Merge the `doc-brown` branch first by running:
 
 ```bash
 git merge doc-brown -m "merge doc brown"
 ```
-=======
->>>>>>> origin/marty-mcfly
-You're going to add both the doc-brown branch and the marty-mcfly branch to the master branch using merge. Merge the `doc-brown` branch first by running `git merge doc-brown -m "merge doc brown"` in the terminal.
 
 Here, we're saying: "Integrate the differences between `master` and `doc-brown`
 _back_ into `master`."
@@ -239,8 +223,8 @@ work. You need to complete the merge yourself by manually adjusting the code.
 Git gives you a few hints to help us out:
 
 - ` HEAD` - the beginning of the original branch (`master`)
-- - the end of the original branch/the beginning of the branch being merged in (`marty-mcfly`)
-- marty-mcfly` - the end of the new branch ( `marty-mcfly`)
+-  - the end of the original branch/the beginning of the branch being merged in (`marty-mcfly`)
+-  marty-mcfly` - the end of the new branch ( `marty-mcfly`)
 
 Take your time and shift the code around, separating the `MARTY MCFLY` and `DOC
 BROWN` code blocks. Use the markers from git as a guide.
@@ -311,13 +295,11 @@ That's it! Open up `index.html` in your browser to see your beautiful work!
 ### Step 6: Wrap Up
 
 Remember, while your computer has these updates, GitHub has no idea that you
-made them. These are all local. 
-
-Typically, the next step would be to create a local branch, push that 
-branch to the remote, and then create a pull request to merge your branch 
-into the remote `master` branch.
-
-**In this lab, you do not need to create a pull request.**
+made them. These are all local. Typically, the next step would be to create a
+branch off of your _local_ master with `git checkout -b wip-marty-and-doc-added
+master`, push that branch with, `git push origin wip-marty-and-doc-added` and
+then create a pull request to merge `wip-marty-and-doc-added` to the remote
+`master` branch.
 
 ## Conclusion
 
